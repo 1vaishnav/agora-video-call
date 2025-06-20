@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agora Video Call</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Agora Video Chat</h1>
+  <div id="video-container">
+    <div id="local-video" class="video-box"></div>
+    <div id="remote-video" class="video-box"></div>
+  </div>
+
+  <div id="controls">
+    <button onclick="toggleMic()">🎙️ Mic</button>
+    <button onclick="toggleCamera()">📷 Camera</button>
+    <button onclick="leaveCall()">🚪 Leave</button>
+  </div>
+
+  <button id="start-btn" onclick="startCall()">Start Call</button>
+
+  <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
